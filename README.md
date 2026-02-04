@@ -31,6 +31,7 @@ $$Score = (0.5 \times Note\ Globale) + (0.4 \times Régularité) + (0.1 \times B
 * `dataset_etClassement.ipynb` : Le moteur. C'est ici que je nettoie tout et que j'applique la formule.
 * `animes_calcules_complet.csv` : Le résultat final avec les nouvelles notes.
 * `Rapport_etVisualisation.ipynb` : Les graphiques pour comprendre les résultats.
+* `Rendu_FINAL.ipynb` : le notebook final dataset et classement + le rapport eda et les graphhiques
 
 
 
