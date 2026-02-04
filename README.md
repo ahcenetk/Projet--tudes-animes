@@ -1,4 +1,4 @@
-# 🎬 études animes : Mon Algorithme Anti-Hype
+# études animes : Mon Algorithme Anti-Hype
 
 Salut ! Voici **études animes**.
 C'est un projet Data que j'ai monté parce que j'en avais marre des classements d'animés classiques (type MyAnimeList) où la "Hype" l'emporte toujours sur la qualité réelle.
