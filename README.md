@@ -75,7 +75,7 @@ Je compare la note globale (réputation) avec la moyenne réelle des épisodes e
 > *Si ce chiffre est élevé (> 1.0), cela signifie que l'animé est "surcoté" par la réputation par rapport à sa qualité technique réelle.*
 
 **3. Normalisation (Logarithme)**
-Pour comparer équitablement des séries de 12 épisodes avec des monstres comme One Piece, j'utilise le logarithme népérien sur le nombre d'épisodes pour l'affichage graphique.
+Pour comparer équitablement des animes de 12 épisodes avec des monstres comme One Piece, j'utilise le logarithme népérien sur le nombre d'épisodes pour l'affichage graphique.
 
 
 
