@@ -23,6 +23,26 @@ $$Score = (0.5 \times Note\ Globale) + (0.4 \times Régularité) + (0.1 \times B
 * **40% Régularité** : C'est le cœur du système. Je calcule l'écart-type entre le meilleur et le pire épisode. Si c'est les montagnes russes, la note chute.
 * **10% Statut "Fini"** : Un petit bonus pour récompenser les histoires qui ont une vraie fin (contrairement aux séries en pause éternelle).
 
+###  Le Détail des Calculs (Sous le capot)
+
+Pour ceux qui veulent comprendre la logique technique, voici comment j'ai construit mes indicateurs clés dans le script Python :
+
+**1. Calcul de la Régularité**
+J'ai d'abord calculé l'écart brut entre le meilleur et le pire épisode.
+ Ecart = Note_Meilleur_Ep - Note_Pire_Ep
+
+Ensuite, j'ai transformé cet écart en une note positive sur 10.
+Régularité = 10 - Ecart
+> *Exemple : Si l'écart est de 0 (parfait), la régularité est de 10/10. Si l'écart est énorme (9 points), la régularité chute à 1/10.*
+
+**2. Détection de la "Hype" (Surcotage)**
+Je compare la note globale (réputation) avec la moyenne réelle des épisodes extrêmes.
+ Différence_Hype = Note_Globale - ({Note_Meilleur_Ep + Note_Pire_Ep}/2)
+> *Si ce chiffre est élevé (> 1.0), cela signifie que l'animé est "surcoté" par la réputation par rapport à sa qualité technique réelle.*
+
+**3. Normalisation (Logarithme)**
+Pour comparer équitablement des séries de 12 épisodes avec des monstres comme One Piece, j'utilise le logarithme népérien sur le nombre d'épisodes pour l'affichage graphique.
+
 
 
 ##  Comment est rangé le projet ?
