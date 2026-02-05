@@ -30,18 +30,18 @@ Pour ceux qui veulent comprendre la logique technique, voici comment j'ai constr
 **1. Calcul de la Régularité**
 J'ai d'abord calculé l'écart brut entre le meilleur et le pire épisode.
  
- $$Ecart = Note_Meilleur_Ep - Note_Pire_Ep
+ $$Ecart = Note_Meilleur_Ep - Note_Pire_Ep$$
 
 Ensuite, j'ai transformé cet écart en une note positive sur 10.
 
-$$Régularité = 10 - Ecart
+$$Régularité = 10 - Ecart$$
 
 > *Exemple : Si l'écart est de 0 (parfait), la régularité est de 10/10. Si l'écart est énorme (9 points), la régularité chute à 1/10.*
 
 **2. Détection de la "Hype" (Surcotage)**
 Je compare la note globale (réputation) avec la moyenne réelle des épisodes extrêmes.
  
- $$Différence_Hype = Note_Globale - ({Note_Meilleur_Ep + Note_Pire_Ep}/2)
+ $$Différence_Hype = Note_Globale - ({Note_Meilleur_Ep + Note_Pire_Ep}/2)$$
 
 > *Si ce chiffre est élevé (> 1.0), cela signifie que l'animé est "surcoté" par la réputation par rapport à sa qualité technique réelle.*
 
