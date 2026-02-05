@@ -50,7 +50,7 @@ $$Score = (0.5 \times Note\ Globale) + (0.4 \times Régularité) + (0.1 \times B
 
 * **50% Note Globale** : Je respecte quand même l'avis des fans.
 * **40% Régularité** : C'est le cœur du système. Je calcule l'écart-type entre le meilleur et le pire épisode. Si c'est les montagnes russes, la note chute.
-* **10% Statut "Fini"** : Un petit bonus pour récompenser les histoires qui ont une vraie fin (contrairement aux séries en pause éternelle).
+* **10% Statut "Fini"** : Un petit bonus pour récompenser les histoires qui ont une vraie fin (contrairement aux animes en pause éternelle).
 
 ###  Le Détail des Calculs (Sous le capot)
 
