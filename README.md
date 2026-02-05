@@ -5,6 +5,26 @@ C'est un projet Data que j'ai monté parce que j'en avais marre des classements 
 
 J'ai voulu voir ce qui se passait si on notait les animés de manière **mathématique** et pas juste émotionnelle.
 
+##  La Technique
+
+Pour réaliser ce projet, je n'ai pas voulu sortir une usine à gaz. J'ai choisi les outils standards et efficaces de la Data Science en Python.
+
+Voici comment j'ai utilisé chaque brique :
+
+ Outil , À quoi ça m'a servi concrètement ? 
+
+**Pandas** 
+**Le Cerveau.** C'est lui qui fait tout le travail de l'ombre : nettoyer les lignes vides (`dropna`), calculer les écarts-types pour la *Régularité* et appliquer ma formule de scoring sur tout le dataset. 
+ **Seaborn** 
+ **Les Yeux.** Indispensable pour voir ce que les chiffres cachent. C'est grâce à lui que j'ai pu croiser 4 informations sur le même graphique (le Scatter Plot "Popularité vs Qualité"). 
+**Matplotlib**  
+**Le Cadre.** Je l'utilise en duo avec Seaborn pour gérer les détails techniques : titrer les graphiques, régler la taille des images et les sauvegarder proprement en PNG. |
+**Jupyter** 
+**L'Atelier.** Tout le code a été écrit et testé dans des Notebooks. C'est parfait pour voir le résultat de chaque ligne de code instantanément (surtout pour les tableaux). 
+**WordCloud**  
+**Le Bonus.** Une petite librairie spécialisée pour analyser le texte. Je l'ai utilisée pour générer le nuage de mots et voir quels genres dominent le marché (Spoiler : c'est l'Action). 
+
+
 
 ## Le Problème
 
